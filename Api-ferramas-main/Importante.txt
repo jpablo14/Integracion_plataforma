@@ -1,0 +1,106 @@
+        API proveedores Ferremas v1.0.0
+==================================================================
+
+Hola muy buenos días, tardes o noche, veo que usted a descargado el archivo y 
+quiere ejecutarlo en su computadora, ¿No?
+
+Bueno este programa es algo sencillo de manejar luego de la instalación, 
+pero antes de ejecutarse tendra que hacer los siguientes pasos.
+
+
+1) Se debe de iniciar un ambiente virtual de python, 
+(Debido que tendra que descargar los componentes para su correcta función, abajo le dejaremos el comando que abre
+un ambiente digital para usted).
+
+"python -m venv .venv"
+
+2) Tendra que instalar "FastApi", es simple su instalación, ejecute el comando que le estaré proporcionando debajo de este
+punto....
+
+"pip install fastapi"
+
+3) Instale Uvicorn, uvicorn es un componente primordial para el correcto funcionamiento de este software,
+le permitirá al programa ver el archivo csv adjunto al código...
+
+"pip install uvicorn" 
+
+4) Siguiente paso, seria instalar Pandas, pandas es la librería que nos permitirá ejecutar el csv y que el programa
+pueda analizarlo y leerlo como modificarlo. 
+
+
+"pip install pandas"
+
+5)Una vez hecho esto, procure de actualizar su pip, sino es actualizado el commando de ejecución no lo va a ejecutar, 
+es más, le insistirá en actualizar su versión de pip de la versión 23 a la versión 24
+
+"pip install --upgrade pip"
+
+
+6) Paso final para la ejecución y correcta instalación, debe de ejecutar en la terminal el siguiente comando:
+
+
+"python -m uvicorn main:app --reload"
+
+
+Cuando este ejecutandose no olvide hacer CTRL + click al link que le saldra en su terminal, ej: "http://127.0.0.1:8000/"!!!
+
+RECUERDE QUE DEBE DE HACER ESTOS PASOS DENTRO DE UN AMBIENTE VIRTUAL, ES MÁS SEGURO QUE NO HAYA PROBLEMAS ESTANDO DENTRO DE
+ESTE ESPACIO, YA TUVE SUFICIENTES PROBLEMAS EJECUTANDOLO ESTANDO FUERA DE ESTE ESPACIO VIRTUAL. 
+
+
+[Contexto]
+
+Bienvenido sea a las pruebas de la beta v1.0.0 de nuestra api para los proveedores de la tienda Ferremas, estamos muy agradecidos
+que tenga la oportunidad de testear el pie del comienzo de una experiencia de usuario competente para nuestro proyecto de tienda
+en línea para la ferretería Ferremas. Debajo de este parrafo se contestarán algunas preguntas de este proyecto que quizás querrá 
+responder o saber.
+
+
+¿Porque realizar una api en python?
+
+La decisión fue hecha personalmente debido a que es uno de los lenguajes que encuentro que puede ahorrarnos un tiempo al desarrollarse, 
+aparte que python tiene herramientas que facilitan mucho el desarrollo y el aprendizaje de estas.
+
+¿FastApi?
+
+Fue una herramienta que me encontre por ahí buscando maneras de poder desarrollar una Api dentro de python, fue la que más atención
+me dio al ver que puede tomar datos de archivos externos y usarlos sin problema. Otra razón de su uso fue debido a que como es una
+herramienta relativamente nueva para mi, quise experimentar lo que podría lograr con esta. 
+
+
+[Funcionamiento del programa y lo que se espera]
+
+El funcionamiento de nuestra api es sencilla, primero el programa parte leyendo un archivo csv que lee su contenido, el 
+contenido son dos columnas de prueba con algunos nombres de compañías ficticias para poder realizar el testing de la api
+(descuide, los nombres no tienen derechos de autor), al ejecutarse, el testeador verá un listado dentro de un html que da funciones 
+sencillas como añadir un nombre de una empresa y eliminar el registro de una empresa, automaticamente el programa ejecutará un GET
+para poder realizar la visualización del registro del archivo csv, los que han sido intregrados para luego permitir su posterior 
+uso. 
+
+Para el futuro del programa se planea poder ingresar datos como el nombre del representante legal de la empresa provedora de 
+productos, como sus correos y diferentes medios de contacto. Se trabajará para la v.1.2.0
+
+[Disclaimer]
+
+Aquí dejaré links a tutoriales para que pueda guiarse en lo que respecta al funcionamiento de FastApi, cualquier tipo de 
+error u carencia de componentes se debe a la poca experiencia con esta herramienta, siendo muy nueva para el dev que hizo este 
+código.
+
+Obviamente no me salva esta explicación, pero es bueno hacerlo saber. :)
+
+
+==Fastapi instalación y uso con archivos csv:
+
+https://www.youtube.com/watch?v=75H2n5KjpEo&t=45s
+
+
+==Como iniciar un ambiente virtual dentro de vscode: 
+
+https://www.youtube.com/watch?v=GZbeL5AcTgw&t=153s
+
+
+== FastApi CRUD con jinjatemplates:
+
+https://www.youtube.com/watch?v=JdyHJN04lSs&t=54s
+
+
